@@ -964,15 +964,16 @@ video {
     }
 
     #products_mobile li:nth-child(1) .p01 {
-        color: #FF8800;
-        font-size: 25px;
+        color: #EA6325;
+        font-size: 35px;
         text-align: center;
     }
 
     #products_mobile li:nth-child(1) .p02 {
-        color: #6E6E6E;
+        color: #333333;
         font-size: 13px;
         text-align: center;
+        font-weight: 500;
         padding-top: 1%;
     }
 
@@ -1565,7 +1566,7 @@ video {
     opacity: 0;
     color: #ffffff;
     position: relative;
-    width: 15%;
+    width: 23%;
     font-size: 14px;
     padding: 1%;
     top: 50%;
