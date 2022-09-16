@@ -1895,10 +1895,9 @@ video {
 @media (max-width:699px) {
     #community {
         width: 96%;
-        height: 10%;
+        height: auto;
         margin: 0 auto;
         overflow: hidden;
-        margin-bottom: 10%;
         position: relative;
         padding-bottom: 10%;
     }
