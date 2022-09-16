@@ -10,7 +10,6 @@ ol {
     list-style: none;
 }
 
-
 /*a태그 글자색 검정, 밑줄 없애기 */
 a {
     color: #7d7979;
@@ -100,8 +99,6 @@ img {
 
 /*  모든 자세히 보기 공통 구미기 설정  */
 
-
-
 /****************pc****************/
 @media (min-width:1000px) {
     .hlink a {
@@ -115,7 +112,6 @@ img {
 
 }
 
-
 /****************tablet****************/
 @media (min-width:700px) and (max-width:999px) {
     .hlink a {
@@ -127,7 +123,6 @@ img {
         border: #7d7979 solid 1px;
     }
 }
-
 
 /****mobile****/
 @media (max-width:699px) {
@@ -152,8 +147,6 @@ img {
     background: rgba(123, 69, 2, 0.5);
     z-index: 999;
 }
-
-
 
 /****************pc****************/
 @media (min-width:1000px) {
@@ -290,11 +283,11 @@ img {
     }
 
     #header_wrap_mobile .gnb li a {
-
+        font-family: 'SBAggro';
+        font-weight: 500;
         display: block;
-        font-size: 11px;
+        font-size: 13px;
         color: #fff;
-        font-weight: 600;
         padding: 10%;
     }
 
@@ -424,6 +417,7 @@ video {
 @media (min-width:1000px) {
     .welcome {
         padding: 5% 0 0;
+
     }
 
     .wel_right .text .p05_1 {
@@ -432,6 +426,42 @@ video {
 
 }
 
+/****************tablet****************/
+@media (min-width:700px) and (max-width:999px) {
+
+    .welcome {
+        width: 96%;
+        padding-top: 5%;
+    }
+
+    .wel_right .text .p01 {
+        font-family: 'SBAggro';
+        color: #EA6325;
+        font-size: 23px;
+        line-height: 1.2em;
+        font-weight: 500;
+    }
+
+    .wel_right .text .p01_1 {
+        display: none;
+    }
+
+    .wel_right .text .p05_1 {
+        display: none;
+    }
+
+    .wel_right .text .p02 {
+        font-size: 18px;
+        margin-bottom: 3%;
+    }
+
+    .wel_right .text .nomal {
+        width: 90%;
+        font-size: 13px;
+        padding: 1% 0 2%;
+        line-height: 1.4em;
+    }
+}
 
 /****************mobile****************/
 @media (max-width:699px) {
@@ -667,8 +697,6 @@ video {
         line-height: 1.2em;
     }
 
-
-
 }
 
 
@@ -789,7 +817,6 @@ video {
     float: left;
 }
 
-
 #products .section2 li:nth-child(1) {
     width: 50%;
     float: left;
@@ -844,9 +871,6 @@ video {
     padding: 50% 0 0 0;
 }
 
-
-
-
 /*호버 캡션 설정*/
 
 #products li:hover {
@@ -896,7 +920,6 @@ video {
 }
 
 
-
 /*pc*/
 @media (min-width:1000px) {}
 
@@ -904,9 +927,7 @@ video {
 @media (min-width:700px) and (max-width:999px) {
     #products {
         width: 96%;
-
     }
-
 }
 
 /*mobile*/
@@ -1020,12 +1041,10 @@ video {
         right: 11%;
         top: 43%;
     }
-
 }
 
 /*#product 설정 끝*/
 /*#event_banner 설정*/
-
 
 .event_banner .box .title {
     font-family: 'SBAggro';
@@ -1055,8 +1074,6 @@ video {
     padding-bottom: 6%;
 }
 
-
-
 /****************pc****************/
 @media (min-width:1000px) {
     #event_banner_wrap {
@@ -1067,7 +1084,7 @@ video {
         background-image: url(../images/index/5.event_banner/event_bg.png);
         width: 100%;
         margin-bottom: 7%;
-        height: 500px;
+        height: 30vw;
     }
 
     .event_banner {
@@ -1079,8 +1096,7 @@ video {
 
     .event_banner .box {
         display: inline-block;
-        width: 60%;
-        padding: 5% 8%;
+        padding: 5% 6%;
         border: #EA6325 1px solid;
         border-radius: 20px;
         background-color: rgba(0, 0, 0, 0.7);
@@ -1099,22 +1115,35 @@ video {
         background-image: url(../images/index/5.event_banner/event_bg.png);
         width: 100%;
         margin-bottom: 7%;
+        height: 40vw;
     }
 
     .event_banner {
         width: 85%;
-        padding: 5% 0;
+        padding: 6% 0;
         margin: 0 auto;
         text-align: center;
     }
 
     .event_banner .box {
         display: inline-block;
-        width: 50%;
-        padding: 5% 10%;
+        padding: 5% 6%;
         border: #EA6325 1px solid;
-        border-radius: 10px;
+        border-radius: 20px;
         background-color: rgba(0, 0, 0, 0.7);
+
+    }
+
+    .event_banner .box .title {
+        font-size: 30px;
+    }
+
+    .event_banner .box .p01 {
+        font-size: 25px;
+    }
+
+    .event_banner .box .p02 {
+        font-size: 15px;
     }
 
 }
@@ -1126,7 +1155,6 @@ video {
         width: 100%;
         overflow: hidden;
         background-color: #ffffff;
-
     }
 
     .event_banner {
@@ -1178,8 +1206,6 @@ video {
         color: #333333;
         padding-bottom: 6%;
     }
-
-
 
 }
 
@@ -1253,7 +1279,6 @@ video {
         display: none;
     }
 
-
 }
 
 /****************mobile****************/
@@ -1312,9 +1337,7 @@ video {
         object-fit: cover;
     }
 
-
 }
-
 
 /*#SNS 설정 끝*/
 /*#store_banner 설정*/
@@ -1341,8 +1364,6 @@ video {
 }
 
 
-
-
 /****************pc****************/
 @media (min-width:1000px) {
     #store_banner_wrap {
@@ -1360,14 +1381,14 @@ video {
 
     .store_banner {
         width: 65%;
-        padding: 4% 0;
+        padding: 6.5% 0;
         margin: 0 auto;
         box-sizing: border-box;
     }
 
     .store_banner .box {
         display: inline-block;
-        width: 40%;
+
         padding: 3% 8%;
         border: #EA6325 1px solid;
         border-radius: 10px;
@@ -1381,22 +1402,17 @@ video {
         margin: 0 auto;
     }
 
-    .store_banner .box .p01_1 {
-        display: none;
-    }
-
-
 }
 
 /****************tablet****************/
 @media (min-width:700px) and (max-width:999px) {
     #store_banner_wrap {
-
         background-repeat: no-repeat;
         background-position: 50% 0%;
         background-size: 100% 100%;
         background-image: url(../images/index/7.flgship/flag_bg.png);
         width: 100%;
+        height: 33vw;
         overflow: hidden;
         box-sizing: border-box;
         margin-bottom: 3%;
@@ -1404,16 +1420,16 @@ video {
     }
 
     .store_banner {
-        width: 80%;
+        width: 85%;
         padding: 5% 0;
         margin: 0 auto;
-
+        text-align: center;
     }
 
     .store_banner .box {
         display: inline-block;
-        width: 35%;
-        padding: 5% 10%;
+
+        padding: 3% 10%;
         border: #EA6325 1px solid;
         border-radius: 10px;
         text-align: center;
@@ -1422,18 +1438,25 @@ video {
     }
 
 
-    .store_banner {
-        width: 85%;
-        text-align: center;
+    .store_banner .box .title {
+        font-family: 'SBAggro';
+        font-weight: 700;
+        font-size: 30px;
+        color: #EA6325;
+        padding: 3% 0 6%;
     }
 
-    .store_banner .box {
-        display: inline-block;
-        width: 50%;
-        padding: 5% 10%;
-        border: #EA6325 1px solid;
-        border-radius: 10px;
-        background-color: rgba(0, 0, 0, 0.7);
+    .store_banner .box .p01 {
+        font-family: 'SBAggro';
+        font-weight: 700;
+        font-size: 14px;
+        color: #fff;
+        padding-bottom: 6%;
+        font-weight: 100;
+    }
+
+    .store_banner .box span {
+        color: #EA6325;
     }
 
 }
@@ -1475,11 +1498,8 @@ video {
         padding-bottom: 6%;
     }
 
-    .store_banner .box .p01 {
-        display: none;
-    }
 
-    .store_banner .box .p01_1 {
+    .store_banner .box .p01 {
         display: block;
         width: 90%;
         margin: 0 auto;
@@ -1495,7 +1515,6 @@ video {
         color: #EA6325;
     }
 
-
 }
 
 /*#store_banner 설정 끝*/
@@ -1503,8 +1522,8 @@ video {
 
 #community {
     width: 80%;
-    height: 600px; 
-        margin: 0 auto;
+    height: 600px;
+    margin: 0 auto;
     overflow: hidden;
     margin-bottom: 10%;
     position: relative;
@@ -1539,8 +1558,6 @@ video {
         flex-direction: column;
     }
 }
-
-
 
 #community .flex-title {
     color: #f1f1f1;
@@ -1860,13 +1877,19 @@ video {
 /******* 모바일 전용 고정 *******/
 
 
-/****************mobile****************/
+/****************PC****************/
 @media (min-width:1000px) {
     .community_mobile {
         display: none;
     }
 }
 
+/****************tablet****************/
+@media (min-width:700px) and (max-width:999px) {
+    .community_mobile {
+        display: none;
+    }
+}
 
 /****************mobile****************/
 @media (max-width:699px) {
@@ -1891,35 +1914,33 @@ video {
     #community {
         padding-top: 5%;
     }
-    #community .title{
+
+    #community .title {
         font-size: 33px;
     }
 
-
-    .community_mobile ul{
+    .community_mobile ul {
         width: 100%;
         padding: 5% 0 0;
         display: flex;
         justify-content: space-between;
-        
+
     }
 
-    .community_mobile ul li{
+    .community_mobile ul li {
         width: 32%;
         text-align: center;
         overflow: hidden;
         background-color: #BBBBBB;
     }
 
-    .community_mobile ul li a{
+    .community_mobile ul li a {
         display: block;
         font-size: 20px;
         padding-bottom: 10%;
-
     }
 
 }
-
 
 
 /*#community 설정 끝*/
