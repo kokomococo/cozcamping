@@ -1889,7 +1889,7 @@ video {
     }
 
     #community {
-        padding-top: 10%;
+        padding-top: 5%;
     }
     #community .title{
         font-size: 33px;
@@ -1898,7 +1898,7 @@ video {
 
     .community_mobile ul{
         width: 100%;
-        padding: 10% 0 0;
+        padding: 5% 0 0;
         display: flex;
         justify-content: space-between;
         
@@ -1918,22 +1918,7 @@ video {
 
     }
 
-
-
-
-
-
-
 }
-
-
-
-
-
-
-
-
-
 
 
 
