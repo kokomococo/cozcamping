@@ -926,13 +926,13 @@ img {
 @media (max-width:699px) {
     #logo_wrap {
         width: 90%;
-        height: 180vw;
+        height: 220vw;
         margin: 0 auto 30vw;
         position: relative;
         background-color: #ffffff;
         border: #C8B37B solid 2px;
         border-radius: 20px;
-        margin-top: 50px;
+        margin-top: 45vw;
     }
 
     #logo_wrap .bg_wrap {
@@ -1027,7 +1027,7 @@ img {
 }
 
 #char_wrap .bg_wrap .blank .text {
-    width: 40%;
+    width: 46%;
     padding-right: 2.5%;
     float: right;
 }
@@ -1100,10 +1100,14 @@ img {
 
     #char_wrap .bg_wrap .blank .text {
         float: none;
+        width: 100%;
+        padding-right: 0;
+        text-align: center;
     }
 
 
     #char_wrap .bg_wrap .white {
+        
         height: 200vw;
     }
 
@@ -1170,15 +1174,19 @@ img {
 
     #char_wrap .bg_wrap .blank .text {
         float: none;
+        width: 100%;
+        padding-right: 0;
+        text-align: center;
     }
 
 
     #char_wrap .bg_wrap .white {
         height: 200vw;
+        margin-top: 10vw;
     }
 
     .char {
-        top: 20vw;
+        top: 30vw;
     }
 
     .char .section1 {
@@ -1206,10 +1214,15 @@ img {
     }
 
     .char .text {
-        width: 90%;
+        width: 100%;
         margin: 0 auto;
         text-align: center;
         padding: 10vw 5% 10vw;
+    }
+
+    .char .text .p02 {
+        text-align: center;
+        
     }
 
     .char .text .p03 {
@@ -1245,7 +1258,7 @@ img {
 }
 
 #service_wrap .bg_wrap .blank .text {
-    width: 50%;
+    width: 100%;
     padding-right: 2.5%;
     float: left;
 }
@@ -1283,10 +1296,8 @@ img {
 
 .service .text .p03 {
     padding: 30px 0 40px;
+    line-height: 50px;
 }
-
-
-
 
 
 .service .picture .picture_wrap {
@@ -1390,7 +1401,7 @@ img {
 /****************mobile****************/
 @media (max-width:699px) {
     #service_wrap {
-        margin-top: 50px;
+        margin-top: 60vw;
         width: 90%;
         padding-bottom: 20vw;
         
@@ -1408,9 +1419,13 @@ img {
         text-align: center;
     }
 
+    #service_wrap .bg_wrap .blank .text .p02{
+        font-size: 30px;
+    }
+
 
     #service_wrap .bg_wrap .white {
-        height: 165vw;
+        height: 220vw;
     }
 
     .service {
