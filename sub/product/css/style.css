@@ -1,0 +1,907 @@
+/*초기 설정*/
+* {
+    margin: 0;
+    padding: 0;
+}
+
+/*UL OL 불릿 없애기*/
+ul,
+ol {
+    list-style: none;
+}
+
+/*a태그 글자색 검정, 밑줄 없애기 */
+a {
+    color: #7d7979;
+    text-decoration: none;
+}
+
+/************************body 설정************************/
+
+body {
+    font-family: 'Noto Sans KR', sans-serif;
+    font-size: 14px;
+    line-height: 24px;
+    color: #7d7979;
+
+}
+
+/*사진 100%*/
+img {
+    display: block;
+    width: 100%;
+}
+
+/************************폰트************************/
+
+/*SB어그로*/
+@font-face {
+    font-family: 'SBAggro';
+    font-weight: 300;
+    font-style: normal;
+    src: url('https://cdn.jsdelivr.net/gh/webfontworld/sandbox/SBAggroLight.eot');
+    src: url('https://cdn.jsdelivr.net/gh/webfontworld/sandbox/SBAggroLight.eot?#iefix') format('embedded-opentype'),
+        url('https://cdn.jsdelivr.net/gh/webfontworld/sandbox/SBAggroLight.woff2') format('woff2'),
+        url('https://cdn.jsdelivr.net/gh/webfontworld/sandbox/SBAggroLight.woff') format('woff'),
+        url('https://cdn.jsdelivr.net/gh/webfontworld/sandbox/SBAggroLight.ttf') format("truetype");
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'SBAggro';
+    font-weight: 500;
+    font-style: normal;
+    src: url('https://cdn.jsdelivr.net/gh/webfontworld/sandbox/SBAggroMedium.eot');
+    src: url('https://cdn.jsdelivr.net/gh/webfontworld/sandbox/SBAggroMedium.eot?#iefix') format('embedded-opentype'),
+        url('https://cdn.jsdelivr.net/gh/webfontworld/sandbox/SBAggroMedium.woff2') format('woff2'),
+        url('https://cdn.jsdelivr.net/gh/webfontworld/sandbox/SBAggroMedium.woff') format('woff'),
+        url('https://cdn.jsdelivr.net/gh/webfontworld/sandbox/SBAggroMedium.ttf') format("truetype");
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'SBAggro';
+    font-weight: 700;
+    font-style: normal;
+    src: url('https://cdn.jsdelivr.net/gh/webfontworld/sandbox/SBAggroBold.eot');
+    src: url('https://cdn.jsdelivr.net/gh/webfontworld/sandbox/SBAggroBold.eot?#iefix') format('embedded-opentype'),
+        url('https://cdn.jsdelivr.net/gh/webfontworld/sandbox/SBAggroBold.woff2') format('woff2'),
+        url('https://cdn.jsdelivr.net/gh/webfontworld/sandbox/SBAggroBold.woff') format('woff'),
+        url('https://cdn.jsdelivr.net/gh/webfontworld/sandbox/SBAggroBold.ttf') format("truetype");
+    font-display: swap;
+}
+
+/*카페24빛나는별*/
+@font-face {
+    font-family: 'Cafe24Shiningstar';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_twelve@1.1/Cafe24Shiningstar.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+/*배달의민족한나*/
+@import url(//fonts.googleapis.com/earlyaccess/hanna.css);
+
+.hanna * {
+    font-family: 'Hanna', fantasy;
+}
+
+/*본고딕 노토산스*/
+@import url(//fonts.googleapis.com/earlyaccess/notosanskr.css);
+
+.notosanskr * {
+    font-family: 'Noto Sans KR', sans-serif;
+}
+
+/*나눔스퀘어*/
+@import url('https://cdn.rawgit.com/moonspam/NanumSquare/master/nanumsquare.css');
+
+
+/************************  공통 구미기 설정  ************************/
+
+/*자세히보기 공통 꾸밈*/
+
+/****************pc****************/
+@media (min-width:1000px) {
+    .hlink a {
+        display: inline-block;
+        color: #7d7979;
+        padding: 1% 10%;
+        font-size: 14px;
+        font-weight: 21px;
+        border: #7d7979 solid 1px;
+    }
+
+}
+
+/****************tablet****************/
+@media (min-width:700px) and (max-width:999px) {
+    .hlink a {
+        display: inline-block;
+        color: #7d7979;
+        padding: 1% 10%;
+        font-size: 14px;
+        font-weight: 21px;
+        border: #7d7979 solid 1px;
+    }
+}
+
+/****mobile****/
+@media (max-width:699px) {
+    .hlink a {
+        display: inline-block;
+        color: #7d7979;
+        padding: 1% 10%;
+        font-size: 16px;
+        font-weight: 24px;
+        border: #7d7979 solid 1px;
+    }
+
+}
+
+/*타이틀 설정*/
+
+
+
+/*사진 프레임 설정*/
+
+.pic {
+    padding: 10px;
+    text-align: center;
+    background-color: #fff;
+    box-shadow: 5px 5px 5px #bbb;
+    border: 1px solid rgb(230, 230, 230);
+}
+
+.pic img {
+    width: 100%;
+}
+
+/****************pc****************/
+@media (min-width:1000px) {}
+
+/****************tablet****************/
+@media (min-width:700px) and (max-width:999px) {}
+
+/****************mobile****************/
+@media (max-width:699px) {
+
+    .title .p01 {
+        font-family: 'Cafe24Shiningstar';
+        font-size: 22px;
+        color: #c07a4b;
+        text-align: center;
+    }
+
+    .title .p02 {
+        font-family: 'SBAggro';
+        font-size: 40px;
+        color: #EA6325;
+        line-height: 72px;
+        text-align: center;
+
+    }
+
+    .text .p03 {
+        font-family: 'Cafe24Shiningstar';
+        font-size: 50px;
+        color: #FF2300;
+        text-align: center;
+
+    }
+
+    .text .p04 {
+        font-family: 'Noto Sans KR', sans-serif;
+        font-size: 14px;
+        color: #333333;
+        line-height: 21px;
+        text-align: center;
+    }
+
+    .text .s01 {
+        color: #EA6325;
+    }
+
+
+}
+
+
+/************************Header 설정************************/
+
+#header_wrap {
+    width: 100%;
+    overflow: hidden;
+    background: rgba(0, 0, 0, 0.42);
+    z-index: 999;
+}
+
+
+
+/****************pc****************/
+@media (min-width:1000px) {
+    .m_gnb {
+        display: none;
+
+    }
+
+    .header {
+        width: 80%;
+        overflow: hidden;
+        margin: 0 auto;
+        text-align: center;
+        position: relative;
+
+    }
+
+    .header h1 {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        margin-top: -48px;
+        margin-left: -49px;
+    }
+
+    .gnb {
+        height: 100px;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+
+    .gnb li {
+        display: inline-block;
+        width: 20%;
+        margin: 0 3%;
+
+    }
+
+    .gnb li:nth-child(3) {
+        padding: 0 50px;
+    }
+
+    .gnb li a {
+        display: block;
+        font-size: 20px;
+        color: #ffffff;
+        font-weight: 600;
+
+    }
+
+    .gnb li a:hover {
+        color: #ea6325;
+    }
+
+    .header .on a {
+        color: #ea6325;
+    }
+
+}
+
+/****************tablet****************/
+@media (min-width:700px) and (max-width:999px) {
+    #header_wrap .header {
+        display: none;
+    }
+
+    .m_gnb {
+        position: fixed;
+        width: 100%;
+        z-index: 999;
+    }
+
+
+    .menu_btn {
+        position: absolute;
+        right: 4vw;
+        top: 4vw;
+    }
+
+    .m_tap {
+        width: 100%;
+        position: absolute;
+        right: 0;
+        top: 0;
+        display: flex;
+        flex-direction: column;
+        background-color: #ffffffe5;
+
+    }
+
+    .m_tap .m_logo {
+        width: 15%;
+        margin: 0 auto;
+        text-align: center;
+        padding: 5vw 0 0;
+
+    }
+
+    .close_menu {
+        position: absolute;
+        right: 4vw;
+        top: 4vw;
+
+    }
+
+    .m_menu {
+        width: 90%;
+        margin: 0 auto;
+        padding: 5vw 0 5vw;
+        display: flex;
+        justify-content: space-around;
+
+    }
+
+    .m_menu li a {
+        color: #EA6325;
+        font-size: 18px;
+        font-weight: 600;
+    }
+}
+
+
+/****************mobile****************/
+@media (max-width:699px) {
+    #header_wrap .header {
+        display: none;
+    }
+
+    .m_gnb {
+        position: fixed;
+        width: 100%;
+        z-index: 999;
+    }
+
+
+    .menu_btn {
+        position: absolute;
+        right: 4vw;
+        top: 4vw;
+    }
+
+    .m_tap {
+        width: 100%;
+        position: absolute;
+        right: 0;
+        top: 0;
+        display: flex;
+        flex-direction: column;
+        background-color: #ffffffe5;
+
+    }
+
+    .m_tap .m_logo {
+        width: 15%;
+        margin: 0 auto;
+        text-align: center;
+        padding: 5vw 0 0;
+
+    }
+
+    .close_menu {
+        position: absolute;
+        right: 4vw;
+        top: 4vw;
+
+    }
+
+    .m_menu {
+        width: 90%;
+        margin: 0 auto;
+        padding: 5vw 0 5vw;
+        display: flex;
+        justify-content: space-around;
+
+    }
+
+    .m_menu li a {
+        color: #EA6325;
+        font-size: 14px;
+    }
+
+}
+
+
+/************************background설정************************/
+#bg {
+    width: 100%;
+    height: 650px;
+    overflow: hidden;
+}
+
+#bg .bg1 {
+    position: absolute;
+    top: 0;
+    left: 50%;
+    margin-left: -960px;
+    width: 1920px;
+    z-index: -1;
+
+}
+
+/****************pc****************/
+@media (min-width:1000px) {
+    #bg .page_title {
+        display: none;
+    }
+}
+
+/****************tablet****************/
+@media (min-width:700px) and (max-width:999px) {
+    #bg {
+        overflow: hidden;
+        height: 140vw;
+    }
+
+    #bg .page_title {
+        width: 200px;
+        position: absolute;
+        top: 30vw;
+        left: 50%;
+        margin-left: -100px;
+        text-align: center;
+        font-family: 'SBAggro';
+        font-size: 50px;
+        color: #EA6325;
+    }
+
+}
+
+/****************mobile****************/
+@media (max-width:699px) {
+    #bg {
+        overflow: hidden;
+        height: 140vw;
+    }
+
+    #bg .page_title {
+        width: 200px;
+        position: absolute;
+        top: 30vw;
+        left: 50%;
+        margin-left: -165px;
+        text-align: center;
+        font-family: 'SBAggro';
+        font-size: 50px;
+        color: #EA6325;
+    }
+}
+
+/************************new item설정************************/
+
+#new_item_wrap{
+    width: 70%;
+    margin: 0 auto;
+    background-color: #F1F1F1;
+    border: #c2c2c2 1px solid;
+    box-shadow: rgba(0, 0, 0, 0.16) 5px 5px 5px ;
+    margin-bottom: 10vw;
+}
+
+.new_item{
+    width: 100%;
+    
+}
+
+.new_item .section1{
+    width: 100%;
+    padding: 5%;
+    box-sizing: border-box;
+    display: flex;
+    justify-content: space-between;
+}
+
+.new_item .left{
+    width: 55%;
+
+}
+
+.new_item .right{
+    width: 40%;
+
+}
+
+.new_item .right .text .p01{
+    font-family: 'Cafe24Shiningstar';
+    font-size: 20px;
+    line-height: 21px;
+    color: #585858;
+}
+
+.new_item .right .text .p02{
+    font-family: 'SBAggro';
+    font-weight: 900;
+    font-size: 39px;
+    line-height: 47px;
+    color: #585858;
+}
+
+.new_item .right .text .p02 span{
+    color: #EA6325;
+}
+
+.new_item .right .text .p03{
+    padding: 3vw 0 2vw;
+    font-family: 'Noto Sans KR', sans-serif;
+    font-size: 18px;
+    line-height: 26px;
+    color: #585858;
+}
+
+
+.new_item .right .picture{
+    display: flex;
+    justify-content: space-between;
+}
+
+.new_item .right .picture .itemcard{
+    width: 45%;
+    background-color: #fff;
+    text-align: center;
+    border: #c2c2c2 1px solid;
+}
+
+.new_item .right .itemcard li:nth-child(2){
+    font-family: 'SBAggro';
+    font-weight: 900;
+    font-size: 18px;
+    line-height: 24px;
+    color: #585858;
+    padding: 1vw 0 0;
+}
+
+.new_item .right .itemcard li:nth-child(3){
+    font-family: 'Cafe24Shiningstar';
+    font-size: 16px;
+    line-height: 18px;
+    color: #585858;
+    padding: 0 0 5px;
+}
+
+
+/************************product설정************************/
+#products{
+    width: 70%;
+    margin: 0 auto;
+}
+
+#products .title{
+    text-align: center;
+    font-family: 'SBAggro';
+    font-weight: 900;
+    font-size: 40px;
+    line-height: 42px;
+    color: #EA6325;
+    margin-bottom: 4vw;
+}
+
+#products .title .under{
+    line-height: 1px;
+    text-decoration: underline;
+}
+
+#products .category{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 45px;
+}
+
+#products .category> li{
+    width: 24%;
+    border: #c0c0c0 1px solid;
+    border-radius: 36px;
+}
+
+.item_card {
+    text-align: center;
+    
+}
+
+#products .category .cover{
+    
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: 100% 100%;
+    text-align: center;
+    padding-top: 5vw;
+    font-family: 'SBAggro';
+    font-weight: 700;
+    font-size: 39px;
+    line-height: 47px;
+    color: #FFF;
+    text-shadow: rgba(0, 0, 0, 0.16) 0 0 10px;
+}
+
+#products .tent .cover{
+    background-image: url(../images/3.products/tent_title.png);
+
+}
+
+#products .bedding .cover{
+    background-image: url(../images/3.products/bedding_title.png);
+
+}
+
+#products .funiture .cover{
+    background-image: url(../images/3.products/funiture_title.png);
+
+}
+
+#products .kitchen .cover{
+    background-image: url(../images/3.products/kitchen_title.png);
+
+}
+
+#products .etc .cover{
+    background-image: url(../images/3.products/etc_title.png);
+
+}
+
+#products .etc{
+    margin-bottom: 80px;
+}
+
+.item_card li:nth-child(2){
+    font-family: 'SBAggro';
+    font-weight: 900;
+    font-size: 18px;
+    line-height: 24px;
+    color: #585858;
+    padding-top: 25px;
+}
+
+.item_card li:nth-child(3){
+    font-family: 'SBAggro';
+    font-weight: 300;
+    font-size: 14px;
+    line-height: 16px;
+    color: #a5a5a5;
+    padding-top: 5px;
+}
+
+.item_card li:nth-child(4){
+    font-family: 'SBAggro';
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 20px;
+    color: #585858;
+    padding-top: 5px;
+}
+
+.item_card li:nth-child(4) span{
+    font-size: 12px;
+}
+
+.item_card li:nth-child(5){
+    padding-top: 25px;
+}
+
+.item_card a{
+    border: #585858 1px solid;
+    padding: 5px 35px;
+    margin-top: 2px;
+    color: #585858;
+    font-family: 'SBAggro';
+    font-weight: 400;
+    font-size: 13px;
+    line-height: 20px;
+
+}
+
+.item_card li:nth-child(6){
+    font-family: 'Noto Sans KR', sans-serif;
+    font-size: 14px;
+    line-height: 20px;
+    color: #585858;
+    padding: 25px 0 ;
+}
+
+
+
+
+
+
+
+
+
+
+
+/************************Footer설정************************/
+
+#footer_wrap {
+    width: 100%;
+    background-color: #EA6325;
+    overflow: hidden;
+    font-size: 14px;
+    clear: both;
+}
+
+#footer_wrap .footer {
+    width: 80%;
+    margin: 0 auto;
+    text-align: center;
+    padding: 2% 0 3%;
+    box-sizing: border-box;
+}
+
+.footer h2 {
+    display: inline-block;
+    width: 150px;
+    height: 150px;
+    margin-bottom: 1%;
+}
+
+.footer .sns_links {
+    clear: both;
+    margin: 0 auto;
+    width: 25%;
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 3%;
+}
+
+.footer .info {
+    width: 70%;
+    margin: 0 auto;
+    margin-bottom: 3%;
+    color: #fff;
+}
+
+.footer .info .contact {
+    width: 90%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+}
+
+.footer .text {
+    width: 30%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+}
+
+.footer .text a {
+    font-weight: 600;
+    color: #fff;
+}
+
+#footer_wrap .go_top {
+    display: none;
+}
+
+/****************pc****************/
+@media (min-width:1000px) {
+    #footer_wrap .footer {
+        width: 60%;
+    }
+
+}
+
+/****************tablet****************/
+@media (min-width:700px) and (max-width:999px) {
+    #footer_wrap {
+        font-size: 9px;
+        overflow: hidden;
+    }
+
+    #footer_wrap .go_top {
+        display: block;
+        width: 100%;
+        text-align: center;
+    }
+
+    #footer_wrap .go_top a {
+        display: block;
+        padding: 2% 0;
+        width: 100%;
+        font-size: 14px;
+        background-color: #874524;
+        color: #fff;
+    }
+
+    #footer_wrap .go_top .btn {
+        width: 15px;
+        display: inline-block;
+    }
+
+    #footer_wrap .footer {
+        width: 100%;
+    }
+
+    .footer h2 {
+        padding: 2% 0 0;
+        width: 100px;
+        height: 100px;
+    }
+
+    .footer .sns_links {
+        width: 30%;
+    }
+
+    .footer .info {
+        width: 100%;
+    }
+
+    .footer .info p {
+        line-height: 10px;
+        padding-bottom: 0;
+    }
+
+    .footer .info .contact {
+        padding: 2% 0 0;
+        line-height: 14px;
+        width: 90%;
+        margin: 0 auto;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .footer .text {
+        width: 30%;
+    }
+}
+
+/****************mobile****************/
+@media (max-width:699px) {
+    #footer_wrap {
+        font-size: 9px;
+        overflow: hidden;
+    }
+
+    #footer_wrap .go_top {
+        display: block;
+        width: 100%;
+        text-align: center;
+    }
+
+    #footer_wrap .go_top a {
+        display: block;
+        padding: 2% 0;
+        width: 100%;
+        font-size: 14px;
+        background-color: #874524;
+        color: #fff;
+    }
+
+    #footer_wrap .go_top .btn {
+        width: 15px;
+        display: inline-block;
+    }
+
+    #footer_wrap .footer {
+        width: 100%;
+    }
+
+    .footer h2 {
+        padding: 2% 0 0;
+        width: 100px;
+        height: 100px;
+    }
+
+    .footer .sns_links {
+        width: 50%;
+    }
+
+    .footer .info {
+        width: 100%;
+    }
+
+    .footer .info p {
+        line-height: 10px;
+        padding-bottom: 0;
+    }
+
+    .footer .info .contact {
+        padding: 2% 0 0;
+        line-height: 14px;
+        width: 90%;
+        margin: 0 auto;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .footer .text {
+        width: 60%;
+    }
+}
